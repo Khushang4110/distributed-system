@@ -20,3 +20,25 @@ distributed-system/
 ├── database/
 ├── k8s/
 └── monitoring/
+
+
+## Getting Started
+
+### Prerequisites
+
+- **Git:** For version control.
+- **Docker:** To build and run containers.
+- **Kubernetes:** Use Minikube, Docker Desktop, or a cloud Kubernetes cluster.
+- **kubectl:** Command-line tool for Kubernetes.
+- **Python 3.9+:** For backend development.
+- **Helm (Optional):** For deploying Prometheus and Grafana.
+
+### Local Development
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/distributed-system.git
+cd distributed-system
+
+
