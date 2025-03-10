@@ -1,0 +1,7 @@
+server:
+  fullnameOverride: my-prometheus-server
+  configMapOverrideName: ""
+  extraConfigmapMounts:
+    - mountPath: /etc/prometheus/prometheus.yml
+      name: server-my-prometheus-server
+      subPath: prometheus.yml
