@@ -38,7 +38,27 @@ distributed-system/
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/distributed-system.git
+git clone https://github.com/Khushang4110/distributed-system.git
 cd distributed-system
+
+## Build Docker Images
+
+To build Docker images for each component of the project, follow these steps:
+
+### Frontend
+
+```bash
+cd frontend
+docker build -t Khushang4110/frontend:latest .
+cd ..
+
+cd backend
+docker build -t Khushang4110/backend:latest .
+cd ..
+
+cd database
+docker build -t Khushang4110/database:latest .
+cd ..
+
 
 
