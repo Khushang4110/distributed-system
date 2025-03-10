@@ -3,19 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Distributed System Project</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css" />
-  <title>Distributed System Frontend</title>
 </head>
 <body>
-  <div class="container">
-    <h1>User Registration</h1>
-    <form id="userForm">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required />
-      <button type="submit">Submit</button>
-    </form>
-    <div id="response"></div>
-  </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Distributed System</a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Our Distributed System</h1>
+      <p>Experience seamless integration using Docker, Kubernetes, and modern DevOps practices.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="feature-items">
+          <div class="feature-item">
+            <h3>Scalability</h3>
+            <p>Easily scale your services with Kubernetes orchestration.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Monitoring</h3>
+            <p>Real-time monitoring with Prometheus and Grafana.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Reliability</h3>
+            <p>Continuous deployment and robust fault tolerance ensure uptime.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About The Project</h2>
+        <p>
+          This project demonstrates a distributed system built with modern technologies.
+          The solution integrates a responsive frontend, a robust Python backend using Flask,
+          and a MySQL database. All components are containerized with Docker and orchestrated via Kubernetes.
+          Monitoring is implemented using Prometheus and Grafana, while GitHub ensures version control
+          and continuous integration.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section / Registration Form -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Register Now</h2>
+        <form id="userForm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          </div>
+          <div class="form-group">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+        <div id="response"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Distributed System Project. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>
